@@ -1,10 +1,9 @@
 name: Auto Sign-in for BBS
 
 on:
-  schedule:
-    - cron: '10 23 * * *'
   workflow_dispatch:  # 允许手动触发
-
+  schedule:
+    - cron: '0 0 * * *'
 jobs:
   sign_in_job:
     runs-on: ubuntu-latest
